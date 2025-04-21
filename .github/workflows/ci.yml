@@ -38,5 +38,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/thudlender/ci-project:${{ env.TAG_NAME }}
-            ghcr.io/thudlender/ci-project:latest
+            ghcr.io/tankittipat/ci-project:${{ env.TAG_NAME }}
+            ghcr.io/tankittipat/ci-project:latest
