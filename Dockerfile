@@ -28,6 +28,6 @@ RUN rm -rf ./*
 COPY nginx.conf /etc/nginx/nginx.conf
 
 # copy build output from the build stage
-COPY --from=build-stage /app/dist ./ 
+COPY --from=build-stage /app/build ./
 
 ENTRYPOINT ["nginx", "-g", "daemon off;"]
